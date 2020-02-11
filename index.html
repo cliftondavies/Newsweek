@@ -13,35 +13,35 @@
 
   <body>
     <!--Navigation-->
-    <nav class="nav fixed-top container-fluid">
+    <nav class="navbar fixed-top container-fluid py-0 px-0 justify-content-start align-items">
       <h1 class="sr-only">Newsweek</h1>
 
       <a href="#"></a>
 
-      <div>
-        <a href="#"></a> <!--Add Logo as Background Image-->
+      <div class="container-fluid py-3 pr-5 temp">
+        <a class="navbar-brand" href="#"></a> <!--Add Logo as Background Image -->
 
-        <ul>
-          <li><a href="#">SIGN IN</a></li>
-          <li><a href="#">SUBSCRIBE <span>&rsaquo;</span></a></li>
+        <ul class="nav font-weight-bold">
+          <li class="nav-item"><a class="nav-link py-0 px-3 text-white" href="#">SIGN IN</a></li>
+          <li class="nav-item"><a class="nav-link py-0 px-3 bg-white subscribe-link" href="#">SUBSCRIBE <span class="arrow">&rsaquo;</span></a></li>
         </ul>
-
-        <button>
-          <i class="fas fa-bars"></i>
-          <i class="fas fa-times"></i>
-        </button>
       </div>
 
-      <nav class="nav position-absolute d-none">
+      <button class="position-absolute">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-times"></i>
+      </button>
+
+      <div class="position-absolute d-none">
         <h2 class="sr-only">Collapsed Nav</h2>
 
-        <form action="#">
+        <form class="form-inline" action="#">
           <input type="search" name="search" id="search">
 
           <button type="button"><i class="fas fa-search"></i></button>
         </form>
 
-        <ul class="navbar">
+        <ul class="navbar-nav">
           <li><a href="#">U.S. <span>&rsaquo;</span></a></li>
           <li><a href="#">World <span>&rsaquo;</span></a></li>
           <li><a href="#">Business <span>&rsaquo;</span></a></li>
@@ -54,17 +54,17 @@
           <li><a href="#">Vantage <span>&rsaquo;</span></a></li>
           <li><a href="#">Weather <span>&rsaquo;</span></a></li>
         </ul>
-      </nav>
+      </div>
     </nav>
 
     <!--Overall Page Wrapper-->
-    <div class="overall-wrap">
+    <div class="container-fluid overall-wrap">
 
       <!--Header-->
       <header>
         <h2 class="sr-only">Header</h2>
 
-        <section>
+        <section class="container-fluid">
           <h3 class="sr-only">Header Top Section</h3>
 
           <time>Wed, Feb 05, 2020</time>
@@ -77,10 +77,10 @@
           </ul>
         </section>
 
-        <nav>
+        <nav class="navbar container-fluid">
           <h3 class="sr-only">Header Nav</h3>
 
-          <ul>
+          <ul class="navbar-nav">
             <li><a href="#">U.S.</a></li>
             <li><a href="#">World</a></li>
             <li><a href="#">Business</a></li>
@@ -94,7 +94,7 @@
             <li><a href="#">Weather</a></li>
           </ul>
 
-          <form action="#">
+          <form class="form-inline" action="#">
             <input type="search" name="search" id="search">
 
             <button type="button"><i class="fas fa-search"></i></button>

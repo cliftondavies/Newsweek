@@ -1,8 +1,18 @@
-.nav div {
+.temp {
   background: #f72210;
 }
 
-.nav div > a {
+.temp > a {
   display: block;
-  background: url("../images/mainlogo.svg");
+  width: 131px;
+  height: 20px;
+  background: url("../images/mainlogo.svg") no-repeat;
 }
+
+.subscribe-link {
+  color: #f72210;
+}
+
+/* .arrow {
+  font-size: 20px;
+} */
