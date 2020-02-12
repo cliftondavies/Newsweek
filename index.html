@@ -27,7 +27,7 @@
         </ul>
       </div>
 
-      <button class="position-absolute nav-button">
+      <button class="position-absolute border-0 nav-button">
         <i class="fas fa-bars fa-2x"></i>
         <i class="fas fa-times fa-2x"></i>
       </button>
@@ -77,27 +77,27 @@
           </ul>
         </section>
 
-        <nav class="navbar container-fluid">
+        <nav class="navbar position-relative container-fluid pl-0 py-3 justify-content-start bg-white second-navbar">
           <h3 class="sr-only">Header Nav</h3>
 
-          <ul class="navbar-nav">
-            <li><a href="#">U.S.</a></li>
-            <li><a href="#">World</a></li>
-            <li><a href="#">Business</a></li>
-            <li><a href="#">Tech &amp; Science</a></li>
-            <li><a href="#">Culture</a></li>
-            <li><a href="#">Newsgeek</a></li>
-            <li><a href="#">Sports</a></li>
-            <li><a href="#">Health</a></li>
-            <li><a href="#">The Debate</a></li>
-            <li><a href="#">Vantage</a></li>
-            <li><a href="#">Weather</a></li>
+          <ul class="navbar-nav flex-row main-nav">
+            <li class="nav-item border-left-0"><a class="nav-link" href="#">U.S.</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">World</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Business</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Tech &amp; Science</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Culture</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Newsgeek</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Sports</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Health</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">The Debate</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Vantage</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Weather</a></li>
           </ul>
 
-          <form class="form-inline" action="#">
-            <input type="search" name="search" id="search" placeholder="Search">
+          <form class="form-inline position-absolute justify-content-end nav-form" action="#">
+            <input class="d-inline-block border-0 bg-white" type="search" name="search" id="search" placeholder="Search">
 
-            <button type="button"><i class="fas fa-search"></i></button>
+            <label for="search" class="border-0 search"><i class="fas fa-search fa-lg"></i></label>
           </form>
         </nav>
       </header>
