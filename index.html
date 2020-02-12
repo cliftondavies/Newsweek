@@ -13,7 +13,7 @@
 
   <body>
     <!--Navigation-->
-    <nav class="navbar fixed-top container-fluid py-0 px-0 justify-content-start align-items">
+    <nav class="navbar fixed-top container-fluid py-0 px-0 justify-content-start align-items d-none">
       <h1 class="sr-only">Newsweek</h1>
 
       <a href="#"></a>
@@ -21,15 +21,15 @@
       <div class="container-fluid py-3 pr-5 temp">
         <a class="navbar-brand" href="#"></a> <!--Add Logo as Background Image -->
 
-        <ul class="nav font-weight-bold">
-          <li class="nav-item"><a class="nav-link py-0 px-3 text-white" href="#">SIGN IN</a></li>
-          <li class="nav-item"><a class="nav-link py-0 px-3 bg-white subscribe-link" href="#">SUBSCRIBE <span class="arrow">&rsaquo;</span></a></li>
+        <ul class="nav mr-4 font-weight-bold">
+          <li class="nav-item"><a class="nav-link py-0 px-2 text-white" href="#">SIGN IN</a></li>
+          <li class="nav-item"><a class="nav-link py-0 px-2 bg-white subscribe-link" href="#">SUBSCRIBE <i class="fas fa-chevron-right ml-1"></i></a></li>
         </ul>
       </div>
 
-      <button class="position-absolute">
-        <i class="fas fa-bars"></i>
-        <i class="fas fa-times"></i>
+      <button class="position-absolute nav-button">
+        <i class="fas fa-bars fa-2x"></i>
+        <i class="fas fa-times fa-2x"></i>
       </button>
 
       <div class="position-absolute d-none">
@@ -58,22 +58,22 @@
     </nav>
 
     <!--Overall Page Wrapper-->
-    <div class="container-fluid overall-wrap">
+    <div class="container-fluid px-3 overall-wrap">
 
       <!--Header-->
       <header>
         <h2 class="sr-only">Header</h2>
 
-        <section class="container-fluid">
+        <section class="container-fluid d-flex justify-content-between align-items-end pt-3 pb-3 header-section">
           <h3 class="sr-only">Header Top Section</h3>
 
-          <time>Wed, Feb 05, 2020</time>
+          <time class="pl-3 text-white">Wed, Feb 05, 2020</time>
 
           <a href="#"></a> <!--Add Logo as Background Image-->
 
-          <ul>
-            <li><a href="#">SIGN IN</a></li>
-            <li><a href="#">SUBSCRIBE <span>&rsaquo;</span></a></li>
+          <ul class="nav font-weight-bold">
+            <li class="nav-item"><a class="nav-link py-0 px-2 text-white" href="#">SIGN IN</a></li>
+            <li class="nav-item"><a class="nav-link py-0 px-2 bg-white subscribe-link" href="#">SUBSCRIBE <i class="fas fa-chevron-right ml-1"></i></a></li>
           </ul>
         </section>
 
@@ -95,7 +95,7 @@
           </ul>
 
           <form class="form-inline" action="#">
-            <input type="search" name="search" id="search">
+            <input type="search" name="search" id="search" placeholder="Search">
 
             <button type="button"><i class="fas fa-search"></i></button>
           </form>
@@ -103,7 +103,7 @@
       </header>
 
       <!--Main Page Wrapper-->
-      <main class="main-wrap">
+      <main class="bg-white main-wrap">
         <h2 class="sr-only">Main Page Wrapper</h2>
 
         <!--General-->

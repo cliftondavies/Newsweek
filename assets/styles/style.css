@@ -13,6 +13,36 @@
   color: #f72210;
 }
 
-/* .arrow {
-  font-size: 20px;
-} */
+.arrow {
+  font-size: 30px;
+}
+
+.nav-button {
+  top: 12px;
+  right: 12px;
+  border: 0;
+  background: none;
+}
+
+.fa-bars,
+.fa-times {
+  color: #fb9a94;
+}
+
+.nav-button .fa-times {
+  display: none;
+}
+
+.overall-wrap {
+  background: #f4f5f6;
+}
+
+.header-section {
+  background: #f72210;
+}
+
+.header-section > a {
+  width: 395px;
+  height: 60px;
+  background: url("../images/mainlogo.svg") no-repeat;
+}
