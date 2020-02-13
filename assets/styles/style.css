@@ -88,13 +88,21 @@
   right: 80px;
 }
 
-#search {
+.nav-form #search {
   width: 60px;
   height: 54px;
+  z-index: 100;
   transition: all .2s ease;
 }
 
-#search:focus {
+.nav-form .search-box {
+  width: 20px;
+  height: 20px;
+  background: url("../images/search.svg") no-repeat;
+  z-index: 400;
+}
+
+.nav-form #search:focus {
   flex: 1;
   padding: 12px;
   z-index: 101;
