@@ -16,27 +16,27 @@
     <nav id="first-navbar" class="navbar fixed-top container-fluid py-3 pr-5">
       <h1 class="sr-only">Newsweek</h1>
 
-      <a class="navbar-brand" href="#"></a> <!--Add Logo as Background Image -->
+      <a class="navbar-brand" href="#"></a>
 
       <ul class="nav mr-4 font-weight-bold">
         <li class="nav-item"><a class="nav-link py-0 px-2 text-white" href="#">SIGN IN</a></li>
         <li class="nav-item"><a class="nav-link py-0 px-2 bg-white subscribe-link" href="#">SUBSCRIBE <i class="fas fa-chevron-right ml-1"></i></a></li>
       </ul>
 
+      <input type="checkbox" id="menu">
+
       <label for="menu" class="position-absolute border-0 menu-bar">
-        <i class="fas fa-bars fa-2x"></i>
+        <i class="fas fa-bars fa-2x test"></i>
         <i class="fas fa-times fa-2x"></i>
       </label>
 
-      <input type="checkbox" id="menu">
-
-      <div class="position-absolute bg-white pl-3 pt-3 nav-hidden">
+      <div class="position-absolute bg-white nav-hidden">
         <h2 class="sr-only">Collapsed Nav</h2>
 
-        <form class="form-inline" action="#">
-          <input type="search" name="search" id="search">
+        <form class="form-inline py-2 justify-content-between" action="#">
+          <input id="search-one" type="search" class="border-0 bg-white" placeholder="Search" size="15">
 
-          <button type="button"><i class="fas fa-search"></i></button>
+          <label for="search-one" class="search-label"></label>
         </form>
 
         <ul class="navbar-nav">
@@ -67,7 +67,7 @@
 
           <time class="pl-3 text-white">Wed, Feb 05, 2020</time>
 
-          <a href="#"></a> <!--Add Logo as Background Image-->
+          <a href="#"></a>
 
           <ul class="nav font-weight-bold">
             <li class="nav-item"><a class="nav-link py-0 px-2 text-white" href="#">SIGN IN</a></li>

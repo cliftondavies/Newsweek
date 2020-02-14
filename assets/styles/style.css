@@ -1,12 +1,8 @@
+/* ---------------------Navigation--------------------- */
 #first-navbar {
   top: -60px;
   background: #f72210;
   transition: top 0.1s;
-}
-
-.temp {
-  /* background: #f72210; */
-  /* opacity: 0; */
 }
 
 #first-navbar > a {
@@ -24,13 +20,10 @@
   color: #f72210;
 }
 
-/* .arrow {
-  font-size: 30px;
-} */
-
 .menu-bar {
   top: 12px;
   right: 20px;
+  cursor: pointer;
   /* border: 0; */
   background: none;
   /* opacity: 0; */
@@ -53,26 +46,74 @@
 .nav-hidden {
   top: 56px;
   right: 13px;
+  left: 100vw;
   width: 220px;
   height: calc(100vh - 56px);
-  box-shadow: rgba(0,0,0,.1) -2px 0 2px;
+  box-shadow: #0000001a -2px 0 2px;
   overflow-x: hidden;
   overflow-y: scroll;
   transition: all .3s ease;
 }
 
-/* .test {
-  border: 1px solid yellow;
+.nav-hidden .nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3px 0 3px 15px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
 }
 
-.nav-test:active + .temp {
-  opacity: 1;
-} */
+.nav-hidden .nav-link:hover {
+  background: #000;
+  color: #fff;
+}
 
+.nav-hidden .fas {
+  color: #0000008c
+}
+
+.nav-hidden .form-inline {
+  padding: 13px;
+}
+
+#search-one {
+  font-size: 16px;
+}
+
+.nav-hidden label {
+  width: 20px;
+  height: 20px;
+  background: url("../images/search.svg") no-repeat;
+}
+
+#search-one:focus {
+  border: 0;
+}
+
+#search-one:focus::placeholder {
+  color: #fff;
+}
+
+#menu:checked ~ .nav-hidden {
+  left: calc(100vw - 233px);
+}
+
+#menu:checked + label i:first-child {
+  display: none;
+}
+
+#menu:checked + label i:last-child {
+  display: inline-block;
+}
+
+/* ----------------Overall Page Wrapper----------------- */
 .overall-wrap {
   background: #f4f5f6;
 }
 
+/* ------------------------Header----------------------*/
 .header-section {
   background: #f72210;
 }
@@ -123,9 +164,10 @@
   right: 6%;
 }
 
-.nav-form #search-two {
+#search-two {
   /* width: 60px; */
   height: 27px;
+  font-size: 16px;
   z-index: 100;
   transition: all .2s ease;
 }
@@ -136,9 +178,10 @@
   background: url("../images/search.svg") no-repeat;
 }
 
-.nav-form #search-two:focus {
+#search-two:focus {
   flex: 1;
   padding: 12px;
+  border: 0;
   z-index: 101;
 }
 
