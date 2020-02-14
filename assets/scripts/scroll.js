@@ -1,3 +1,13 @@
+window.onresize = function() {displayFunction()};
+
+function displayFunction() {
+  if (window.innerWidth < 768) {
+    document.getElementById("first-navbar").style.top = "0";
+  } else {
+    document.getElementById("first-navbar").style.top = "-60px";
+  }
+}
+
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {

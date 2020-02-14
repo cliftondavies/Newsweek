@@ -1,8 +1,8 @@
 /* ---------------------Navigation--------------------- */
 #first-navbar {
-  top: -60px;
+  top: 0;
   background: #f72210;
-  transition: top 0.1s;
+  /* transition: top 0.1s; */
 }
 
 #first-navbar > a {
@@ -187,4 +187,9 @@
 
 #search-two:focus::placeholder {
   color: #fff;
+}
+
+/* Main Wrapper */
+.main-wrap {
+  margin-top: 70px;
 }

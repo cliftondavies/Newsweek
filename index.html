@@ -26,7 +26,7 @@
       <input type="checkbox" id="menu">
 
       <label for="menu" class="position-absolute border-0 menu-bar">
-        <i class="fas fa-bars fa-2x test"></i>
+        <i class="fas fa-bars fa-2x"></i>
         <i class="fas fa-times fa-2x"></i>
       </label>
 
@@ -56,10 +56,10 @@
     </nav>
 
     <!--Overall Page Wrapper-->
-    <div class="container-fluid px-3 overall-wrap">
+    <div class="container-fluid px-0 px-md-3 overall-wrap">
 
       <!--Header-->
-      <header>
+      <header class="d-none d-lg-block">
         <h2 class="sr-only">Header</h2>
 
         <section class="container-fluid d-flex justify-content-between align-items-end pt-4 pb-3 header-section">
@@ -78,7 +78,7 @@
         <nav class="navbar position-relative container-fluid pl-0 py-3 justify-content-start bg-white second-navbar">
           <h3 class="sr-only">Header Nav</h3>
 
-          <ul class="navbar-nav flex-row main-nav">
+          <ul class="navbar-nav flex-row w-100 main-nav">
             <li class="nav-item border-left-0"><a class="nav-link" href="#">U.S.</a></li>
             <li class="nav-item"><a class="nav-link" href="#">World</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Business</a></li>
@@ -101,15 +101,15 @@
       </header>
 
       <!--Main Page Wrapper-->
-      <main class="bg-white main-wrap">
+      <main class="container-fluid mt-lg-0 px-3 bg-white main-wrap">
         <h2 class="sr-only">Main Page Wrapper</h2>
 
         <!--General-->
-        <section>
+        <section class="row">
           <h3 class="sr-only">Featured, Stories, Culture &amp; Travel, Opinion, News</h3>
 
           <!--Featured Stories-->
-          <section>
+          <section class="col">
             <h4>FEATURED STORIES</h4>
 
             <article>
@@ -173,7 +173,7 @@
             </article>
           </section>
 
-          <section>
+          <section class="col">
             <h4 class="sr-only">Stories, Culture &amp; Travel</h4>
 
             <!--Top Story-->
@@ -239,7 +239,7 @@
             </section>
 
             <!--More Stories-->
-            <section>
+            <section class="col">
               <h5>MORE STORIES</h5>
 
               <article>
@@ -568,7 +568,7 @@
                 <span><a href="#">U.S.</a></span>
               </div>
 
-              <h6><a href="#">Super Bowl Sees 1.4bn Wings Eaten, Campaigners Warn About Chicken Suffering</a></h5>
+              <h6><a href="#">Super Bowl Sees 1.4bn Wings Eaten, Campaigners Warn About Chicken Suffering</a></h6>
 
               <p>The National Chicken Council said a record-breaking number of wings were eaten over the Super Bowl weekend.</p>
             </article>
