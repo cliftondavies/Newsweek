@@ -1,6 +1,6 @@
 /* ---------------------Navigation--------------------- */
 #first-navbar {
-  top: 0;
+  top: -60px;
   background: #f72210;
   /* transition: top 0.1s; */
 }
