@@ -49,7 +49,7 @@
   left: 100vw;
   width: 220px;
   height: calc(100vh - 56px);
-  box-shadow: #0000001a -2px 0 2px;
+  box-shadow: rgba(0, 0, 0, 0.102) -2px 0 2px;
   overflow-x: hidden;
   overflow-y: scroll;
   transition: all .3s ease;
@@ -71,7 +71,7 @@
 }
 
 .nav-hidden .fas {
-  color: #0000008c
+  color: rgba(0, 0, 0, 0.549)
 }
 
 .nav-hidden .form-inline {
@@ -192,4 +192,54 @@
 /* Main Wrapper */
 .main-wrap {
   margin-top: 70px;
+}
+
+/* ---General--- */
+.middle h5 {
+  font-size: 15px;
+  font-weight: 700;
+  color: rgba(3, 3, 3, 0.4);
+}
+
+.middle h6 a {
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #000;
+}
+
+.middle h6 a:hover {
+  text-decoration-color: #f72210;
+}
+
+.middle p {
+  font-size: 13px;
+  line-height: 1.3;
+}
+
+.top-story .btn {
+  bottom: 0;
+  font-size: 15px;
+  font-weight: 700;
+  background: rgba(255,255,255,.9);
+}
+
+.top-story .btn a {
+  color: #f72210;
+}
+
+.more-stories h6 a {
+  font-size: 15px;
+}
+
+.more-stories img {
+  width: 100%;
+  /* object-fit: cover; */
+}
+
+@media screen and (min-width: 481px) {
+  .more-stories article > a {
+    width: 258px;
+    height: 172px;
+  }
 }
