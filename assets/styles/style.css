@@ -195,46 +195,60 @@
 }
 
 /* ---General--- */
-.middle h5 {
+.general img {
+  object-fit: cover;
+}
+
+/* --Featured & Middle-- */
+.middle h5,
+.featured h4 {
   font-size: 15px;
   font-weight: 700;
   color: rgba(3, 3, 3, 0.4);
 }
 
-.middle h6 a {
+.middle h6 a,
+.featured h5 a {
   font-size: 19px;
   font-weight: 700;
   line-height: 1.1;
   color: #000;
 }
 
-.middle h6 a:hover {
+.middle h6 a:hover,
+.featured h5 a:hover {
   text-decoration-color: #f72210;
 }
 
-.middle p {
+.middle p,
+.featured p {
   font-size: 13px;
   line-height: 1.3;
 }
 
-.top-story .btn {
+/* --Featured & Top Story--*/
+.top-story .btn,
+.featured .btn {
   bottom: 0;
   font-size: 15px;
   font-weight: 700;
   background: rgba(255,255,255,.9);
 }
 
-.top-story .btn a {
+.top-story .btn a,
+.featured .btn a {
   color: #f72210;
 }
 
+/* --More Stories--*/
 .more-stories h6 a {
   font-size: 15px;
 }
 
 .more-stories img {
   width: 100%;
-  /* object-fit: cover; */
+  height: 100%;
+  object-fit: cover;
 }
 
 @media screen and (min-width: 481px) {
@@ -242,4 +256,52 @@
     width: 258px;
     height: 172px;
   }
+}
+
+/* --Culture & Travel-- */
+.culture-travel {
+  background: #f4f5f7;
+}
+
+.culture-travel h5 a {
+  color: rgba(3, 3, 3, 0.4);
+}
+
+.culture-travel h5 a:hover {
+  text-decoration: none;
+}
+
+.culture-travel div {
+  background: #f4f5f7;
+}
+
+.culture-travel div > a {
+  font-size: 13px;
+  background: #c2d4d7;
+  color: #272727;
+}
+
+.culture-travel div > a:hover {
+  background: #272727;
+  color: #c2d4d7;
+}
+
+.culture-travel h6 a {
+  font-size: 20px;
+  font-weight: 400;
+  color: #272727;
+}
+
+.culture-travel h6 a:hover {
+  text-decoration: none;
+}
+
+.culture-travel p {
+  font-size: 15px;
+  color: rgba(39,39,39,.5);
+}
+
+/* ---Featured---*/
+.featured .btn .sponsored {
+  color: #3581f4;
 }
