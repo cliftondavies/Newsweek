@@ -210,7 +210,8 @@
 
 .middle h6 a,
 .featured h5 a,
-.right h6 a {
+.right h6 a,
+.results {
   font-size: 19px;
   font-weight: 700;
   line-height: 1.1;
@@ -218,12 +219,15 @@
 }
 
 .middle h6 a:hover,
-.featured h5 a:hover {
+.featured h5 a:hover,
+.results:hover {
+  color: black;
   text-decoration-color: #f72210;
 }
 
 .middle p,
-.featured p {
+.featured p,
+.right p {
   font-size: 13px;
   line-height: 1.3;
 }
@@ -248,15 +252,17 @@
   font-size: 15px;
 }
 
-/* --More Stories--*/
-.more-stories img {
+/* --More Stories and Latest-- */
+.more-stories img,
+.latest img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
 @media screen and (min-width: 481px) {
-  .more-stories article > a {
+  .more-stories article > a,
+  .latest article > a {
     width: 258px;
     height: 172px;
   }
@@ -264,12 +270,9 @@
 
 /* --Culture & Travel and Opinion--*/
 .culture-travel h5 a,
-.opinion h5 a {
+.opinion h5 a,
+.latest h5 a {
   color: rgba(3, 3, 3, 0.4);
-}
-
-.culture-travel h5 a:hover,
-.opinion h5 a {
   text-decoration: none;
 }
 
@@ -297,9 +300,6 @@
   font-size: 20px;
   font-weight: 400;
   color: #272727;
-}
-
-.culture-travel h6 a:hover {
   text-decoration: none;
 }
 
@@ -323,4 +323,67 @@
   font-size: 14px;
   font-weight: 700;
   color: #555;
+}
+
+.sign-up {
+  max-width: 300px;
+  border-color: #e5e5e5;
+  background: #f4f5f6;
+}
+
+.right .sign-up h5{
+  font-size: 16px;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.sign-up div span {
+  width: 29px;
+  height: 28px;
+  background: url("../images/sublogo.svg"), #f72210;
+}
+
+.sign-up .btn {
+  width: 100px;
+  height: 38px;
+  background: #666;
+}
+
+.sign-up .btn:hover {
+  background: #999;
+}
+
+.sign-up .card-link {
+  font-size: 14px;
+  color: #333;
+}
+
+/* --Opinion-- */
+.opinion article > a {
+  width: 63px;
+  height: 63px;
+}
+
+/* --In The Magazine-- */
+.magazine img {
+  object-fit: cover;
+}
+
+#issue {
+  bottom: 0;
+  font-size: 15px;
+  font-weight: 700;
+  background: rgba(255,255,255,.9);
+}
+
+#issue a {
+  color: #f72210;
+}
+
+#see-all {
+  background: #f4f5f7;
+}
+
+#see-all:hover {
+  background: #dbdcdd;
 }
