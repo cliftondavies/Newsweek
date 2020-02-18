@@ -1,3 +1,4 @@
+/* --Body-- */
 body {
   background: #f4f5f6;
 }
@@ -150,6 +151,7 @@ body {
 }
 
 .main-nav li {
+  flex: 1 auto;
   border-left: 0.5px solid #d9d9d9;
 }
 
@@ -206,7 +208,15 @@ body {
   }
 }
 
-/* ---General--- */
+/*
+ * General
+ *
+ * Includes subsections: Featured, Middle and Right.
+ *
+ * Middle section consists of Top Story, More Stories, and Culture & Travel sections
+ *
+ * Right section contains Latest News, and Opinion sections
+ */
 .general img {
   object-fit: cover;
 }
@@ -223,7 +233,7 @@ body {
 .middle h6 a,
 .featured h5 a,
 .right h6 a,
-.results {
+.ads {
   font-size: 19px;
   font-weight: 700;
   line-height: 1.1;
@@ -232,7 +242,7 @@ body {
 
 .middle h6 a:hover,
 .featured h5 a:hover,
-.results:hover {
+.ads:hover {
   color: black;
   text-decoration-color: #f72210;
 }
@@ -244,9 +254,10 @@ body {
   line-height: 1.3;
 }
 
-/* --Top Story and Featured--*/
+/* --Top Story, Featured and Right--*/
 .top-story .btn,
-.featured .btn {
+.featured .btn,
+.right .btn {
   bottom: 0;
   font-size: 15px;
   font-weight: 700;
@@ -346,8 +357,9 @@ body {
   }
 }
 
-/* ---Featured---*/
-.featured .btn .sponsored {
+/* ---Featured and Right---*/
+.featured .btn .sponsored,
+.right .btn .sponsored {
   color: #3581f4;
 }
 
@@ -369,7 +381,7 @@ body {
   background: #f4f5f6;
 }
 
-.right .sign-up h5{
+.right .sign-up h5 {
   font-size: 16px;
   color: #333;
   text-transform: uppercase;
