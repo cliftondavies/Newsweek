@@ -46,7 +46,7 @@
 .nav-hidden {
   top: 56px;
   right: 13px;
-  left: 100vw;
+  left: 100%;
   width: 220px;
   height: calc(100vh - 56px);
   box-shadow: rgba(0, 0, 0, 0.102) -2px 0 2px;
@@ -125,6 +125,7 @@
 }
 
 .second-navbar {
+  padding-right: 175px !important;
   border-bottom: 2.5px solid #f4f5f6;
 }
 
@@ -191,7 +192,14 @@
 
 /* Main Wrapper */
 .main-wrap {
-  margin-top: 70px;
+  margin-top: 75px;
+}
+
+@media screen and (min-width: 992px) {
+  .main-wrap {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
 }
 
 /* ---General--- */
@@ -268,8 +276,15 @@
   }
 }
 
-/* --Culture & Travel and Opinion--*/
-.culture-travel h5 a,
+@media screen and (min-width: 768px) {
+  .more-stories article > a,
+  .latest article > a {
+    width: 135px;
+    height: 90px;
+  }
+}
+
+/* --Opinion and Latest--*/
 .opinion h5 a,
 .latest h5 a {
   color: rgba(3, 3, 3, 0.4);
@@ -296,6 +311,11 @@
   color: #c2d4d7;
 }
 
+.culture-travel h5 a {
+  color: #333;
+  text-decoration: none;
+}
+
 .culture-travel h6 a {
   font-size: 20px;
   font-weight: 400;
@@ -306,6 +326,20 @@
 .culture-travel p {
   font-size: 15px;
   color: rgba(39,39,39,.5);
+}
+
+@media screen and (min-width: 768px) {
+  .culture-travel {
+    flex-wrap: wrap;
+  }
+
+  .culture-travel h5 {
+    width: 100%;
+  }
+
+  .culture-travel article {
+    width: 47.5%;
+  }
 }
 
 /* ---Featured---*/
