@@ -11,7 +11,7 @@ body {
 }
 
 #first-navbar > a {
-  display: block;
+  /* display: block; */
   width: 131px;
   height: 20px;
   background: url("../images/mainlogo.svg") no-repeat;
@@ -39,12 +39,12 @@ body {
   color: #fb9a94;
 }
 
-.menu-bar .fa-times {
+/* .menu-bar .fa-times {
   display: none;
-}
+} */
 
 #menu {
-  position: absolute;
+  /* position: absolute; */
   left: -9999px;
 }
 
@@ -61,12 +61,12 @@ body {
 }
 
 .nav-hidden .nav-link {
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between; */
   padding: 3px 0 3px 15px;
   font-size: 18px;
-  font-weight: 700;
+  /* font-weight: 700; */
   color: #000;
 }
 
@@ -151,7 +151,8 @@ body {
 }
 
 .main-nav li {
-  flex: 1 auto;
+  /* flex: 1 auto; */
+  flex-basis: auto;
   border-left: 0.5px solid #d9d9d9;
 }
 
@@ -408,6 +409,7 @@ body {
   .right > article {
     max-width: 330px;
   }
+}
 
 /* --Opinion-- */
 .opinion article > a {
@@ -429,7 +431,6 @@ body {
 #issue {
   bottom: 0;
   font-size: 15px;
-  font-weight: 700;
   background: rgba(255,255,255,.9);
 }
 
@@ -482,7 +483,6 @@ body {
 .mag-other a.btn {
   bottom: 0;
   font-size: 15px;
-  font-weight: 700;
   background: #f72210;
 }
 
@@ -494,7 +494,7 @@ body {
 
   .mag-heading > div {
     width: 100%;
-    border-bottom: 0.5px solid #d3d3d3;
+    border-bottom: .5px solid #d3d3d3;
   }
 
   .mag-heading article {
@@ -526,3 +526,62 @@ body {
     height: 262px;
   }
 }
+
+/* --Editor's Pick-- */
+.editor-pick img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.editor-pick > div {
+  width: 95%;
+}
+
+.editor-pick h5 {
+  font-size: 16px;
+  color: #333;
+}
+
+.editor-pick > div span {
+  width: 29px;
+  height: 28px;
+  background: url("../images/sublogo.svg"), #f72210;
+}
+
+.editor-pick .btn {
+  bottom: 0;
+  font-size: 15px;
+  background: rgba(255,255,255,.9);
+}
+
+.editor-pick span a {
+  font-size: 15px;
+  color: #f72210;
+}
+
+.editor-pick h6 a {
+  font-size: 17px;
+  color: #000;
+}
+
+.editor-pick h6 a:hover {
+  text-decoration-color: #f72210;
+}
+
+.editor-pick p {
+  font-size: 13px;
+  line-height: 1.3;
+}
+
+@media screen and (min-width: 768px) {
+  .editor-pick h6 a {
+    font-size: 20px;
+  }
+
+  .editor-pick p {
+    font-size: 15px;
+  }
+}
+
+/* --Featured Slideshows--*/
