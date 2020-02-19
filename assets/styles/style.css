@@ -197,9 +197,9 @@ body {
 }
 
 /* Main Wrapper */
-.main-wrap {
+/* .main-wrap {
   margin-top: 75px;
-}
+} */
 
 @media screen and (min-width: 992px) {
   .main-wrap {
@@ -344,10 +344,6 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .culture-travel {
-    flex-wrap: wrap;
-  }
-
   .culture-travel h5 {
     width: 100%;
   }
@@ -408,6 +404,11 @@ body {
   color: #333;
 }
 
+@media screen and (min-width: 768px) {
+  .right > article {
+    max-width: 330px;
+  }
+
 /* --Opinion-- */
 .opinion article > a {
   width: 63px;
@@ -416,8 +417,14 @@ body {
 
 /* --In The Magazine-- */
 .magazine img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
+
+/* .mag-img {
+  flex: 1;
+} */
 
 #issue {
   bottom: 0;
@@ -436,4 +443,86 @@ body {
 
 #see-all:hover {
   background: #dbdcdd;
+}
+
+.mag-heading h5 {
+  font-size: 16px;
+  color: #333;
+}
+
+.mag-heading > div span {
+  width: 29px;
+  height: 28px;
+  background: url("../images/sublogo.svg"), #f72210;
+}
+
+.mag-heading article span,
+.mag-other span {
+  font-size: 14px;
+  background: #f72210;
+}
+
+.mag-heading div > a,
+.mag-other div a {
+  font-size: 14px;
+  color: #f72210;
+}
+
+.mag-heading h6 a,
+.mag-other h6 a {
+  font-size: 14px;
+  color: #000;
+}
+
+.mag-heading h6 a:hover,
+.mag-other h6 a:hover {
+  text-decoration-color: #f72210;
+}
+
+.mag-other a.btn {
+  bottom: 0;
+  font-size: 15px;
+  font-weight: 700;
+  background: #f72210;
+}
+
+@media screen and (min-width: 768px) {
+  .mag-img {
+    width: 100%;
+    height: 162px;
+  }
+
+  .mag-heading > div {
+    width: 100%;
+    border-bottom: 0.5px solid #d3d3d3;
+  }
+
+  .mag-heading article {
+    width: 30%;
+  }
+
+  #issue {
+    font-size: 13px;
+  }
+
+  #see-all {
+    font-size: 14px;
+  }
+
+  .mag-heading h6 a,
+  .mag-other h6 a {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .mag-img {
+    height: 162px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mag-img {
+    height: 262px;
+  }
 }
