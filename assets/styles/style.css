@@ -284,6 +284,14 @@ body {
   object-fit: cover;
 }
 
+@media screen and (min-width: 0) {
+  .more-stories article > a,
+  .latest article > a {
+    width: 135px;
+    height: 90px;
+  }
+}
+
 @media screen and (min-width: 481px) {
   .more-stories article > a,
   .latest article > a {
@@ -658,4 +666,68 @@ body {
   .slideshow h6 a {
     font-size: 19px;
   }
+}
+
+/* --Focus Sections-- */
+.focus a > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.focus h5:before {
+  display: block;
+  content: "";
+  width: 100%;
+  margin-bottom: 20px;
+  border-top: .5px solid #d3d3d3;
+}
+
+.focus h5 {
+  font-size: 19px;
+  color: #f72210;
+}
+
+.focus h6 a {
+  font-size: 16px;
+  color: #000;
+}
+
+.focus h6 a:hover {
+  text-decoration-color: #f72210;
+}
+
+.focus-sub h6 a {
+  font-size: 15px;
+}
+
+.focus-sub h6 a:hover {
+  color: #f72210;
+}
+
+@media screen and (min-width: 0) {
+  .focus-sub article > a {
+    width: 135px;
+    height: 90px;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .focus-sub article > a {
+    width: 258px;
+    height: 172px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .focus-sub article > a {
+    width: 135px;
+    height: 90px;
+  }
+
+  /* .focus-sub a > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  } */
 }
