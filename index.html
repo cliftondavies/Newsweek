@@ -101,7 +101,7 @@
       </header>
 
       <!--Main Page Wrapper-->
-      <main class="container-fluid mt-5 pt-4 mt-lg-0 px-3 pt-lg-3 bg-white main-wrap">
+      <main class="container-fluid mt-5 mb-1 pt-4 mt-lg-0 px-3 pt-lg-3 bg-white main-wrap">
         <h2 class="sr-only">Main Page Wrapper</h2>
 
         <!--General-->
@@ -1028,7 +1028,7 @@
         </section>
 
         <!--Sports-->
-        <section class="row mb-4 focus">
+        <section class="row pb-4 pb-md-2 focus">
           <h5 class="col-12 font-weight-bold">Sports</h5>
 
           <article class="col-md-4 card border-0 pb-4">
@@ -1066,57 +1066,56 @@
       </main>
 
       <!--Footer-->
+      <footer class="container-fluid pt-4 px-3 footer">
         <h2 class="sr-only">Footer</h2>
 
         <!--Membership-->
-        <section>
+        <section class="row px-lg-3 mb-5 membership">
           <h3 class="sr-only">Membership</h3>
 
-          <div>
-            <!--Subscribe-->
-            <section>
-              <h5>SUBSCRIBE</h5>
+          <!--Subscribe-->
+          <section class="col-lg-7 col-xl-8 mb-4 subscribe">
+            <h4 class="font-weight-bold">SUBSCRIBE</h4>
 
-              <article>
-                <div>
-                  <img alt="magazine issue one" src="https://d.newsweek.com/en/full/1563281/february-7-2020-cover.jpg?w=170&amp;q=95&amp;f=65b7533b0137978d446aa40a1c50692a">
-                  <img alt="magazine issue two" src="https://d.newsweek.com/en/full/1564924/february-14-2020-cover.jpg?w=170&amp;q=95&amp;f=c1d5601167747525a4d15e56749350ec">
-                </div>
+            <article class="d-md-flex align-items-md-center px-3 pt-4 pb-3 px-md-4 py-md-4 text-center text-md-left">
+              <div class="position-relative flex-grow-0 flex-shrink-0 mb-3 mx-auto text-left">
+                <img class="position-absolute" alt="magazine issue one" src="https://d.newsweek.com/en/full/1563281/february-7-2020-cover.jpg?w=170&amp;q=95&amp;f=65b7533b0137978d446aa40a1c50692a">
+                <img class="position-absolute" alt="magazine issue two" src="https://d.newsweek.com/en/full/1564924/february-14-2020-cover.jpg?w=170&amp;q=95&amp;f=c1d5601167747525a4d15e56749350ec">
+              </div>
 
-                <div>
-                  <h6>In-depth Stories You Don&apos;t See Elsewhere About Topics You Want to Read!</h6>
+              <div class="pl-md-4">
+                <h5 class="mb-3 font-weight-bold">In-depth Stories You Don&apos;t See Elsewhere About Topics You Want to Read!</h5>
 
-                  <p>All Access + Weekly Delivery. <br> Choose A Membership That&apos;s Perfect for You!</p>
+                <p class="mb-4">All Access + Weekly Delivery. <br> Choose A Membership That&apos;s Perfect for You!</p>
 
-                  <a href="#">SUBSCRIBE <span>&rsaquo;</span></a>
-                </div>
-              </article>
-            </section>
+                <a class="btn rounded-0 font-weight-bold text-white" href="#">SUBSCRIBE <i class="fas fa-chevron-right ml-1"></i></a>
+              </div>
+            </article>
+          </section>
 
-            <!--Newsletter-->
-            <section>
-              <h5>NEWSLETTER</h5>
+          <!--Newsletter-->
+          <section class="col-lg-5 col-xl-4 pb-lg-5 newsletter">
+            <h4 class="font-weight-bold">NEWSLETTER</h4>
 
-              <article>
-                <img src="https://d.newsweek.com/en/full/1541302/starting5-homepage.png?w=397&h=265&q=90&f=742bce9a6f72dd8f19ba2e7fd5db06e5" alt="newsweek newsletter">
+            <article class="border h-100 d-md-flex text-md-left text-center">
+              <img class="d-block flex-grow-0 flex-shrink-0" src="https://d.newsweek.com/en/full/1541302/starting5-homepage.png?w=397&h=265&q=90&f=742bce9a6f72dd8f19ba2e7fd5db06e5" alt="newsweek newsletter">
 
-                <div>
-                  <h6>The Starting 5</h6>
+              <div class="px-3 px-md-4 py-3 py-md-4">
+                <h5 class="mb-3 font-weight-bold">The Starting 5</h5>
 
-                  <p>Take back your inbox. Sign up for our newsletter and start making sense of the world around you.</p>
+                <p class="mb-4">Take back your inbox. Sign up for our newsletter and start making sense of the world around you.</p>
 
-                  <a href="#">SIGN UP <span>&rsaquo;</span></a>
-                </div>
-              </article>
-            </section>
-          </div>
+                <a class="btn rounded-0 font-weight-bold text-white" href="#">SIGN UP <i class="fas fa-chevron-right ml-1"></i></a>
+              </div>
+            </article>
+          </section>
         </section>
 
         <!--Footer Links-->
-        <section>
+        <section class="">
           <h3 class="sr-only">Footer Links</h3>
 
-          <div>
+          <div class="col">
             <a href="#"></a> <!--Add Logo Background Image-->
 
             <span>&copy; 2020 NEWSWEEK</span>
@@ -1130,7 +1129,7 @@
             </ul>
           </div>
 
-          <div>
+          <div class="col">
             <span>Editions:</span>
 
             <ul>
@@ -1142,7 +1141,7 @@
             </ul>
           </div>
 
-          <ul>
+          <ul class="col">
             <li><a href="#">About Us</a></li>
             <li><a href="#">Corrections</a></li>
             <li><a href="#">Contact Us</a></li>
@@ -1158,6 +1157,7 @@
             <li><a href="#">Consent preferences</a></li>
           </ul>
         </section>
+      </footer>
     </div>
 
     <!--Scripts for jQuery, Popper, Bootstrap, Font Awesome-->

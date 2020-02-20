@@ -731,3 +731,58 @@ body {
     object-fit: cover;
   } */
 }
+
+/* --Footer-- */
+.footer {
+  background: #fff;
+}
+
+.membership h4 {
+  font-size: 15px;
+  color: #f72210;
+}
+
+.subscribe article {
+  background: #f4f5f6;
+}
+
+.subscribe div:first-child {
+  width: 260px;
+  height: 241px;
+}
+
+.subscribe img:last-child {
+  right: 10px;
+  bottom: 0;
+}
+
+.membership h5 {
+  font-size: 18px;
+  color: #000;
+}
+
+.membership p {
+  font-size: 15px;
+}
+
+.membership .btn {
+  font-size: 16px;
+  background: #f72210;
+}
+
+.newsletter img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .membership h5 {
+    font-size: 20px;
+  }
+
+  .newsletter img {
+    width: 178px;
+    height: auto;
+  }
+}
