@@ -1,9 +1,7 @@
-/* --Body-- */
-body {
-  background: #f4f5f6;
-}
+/* ------------Body------------ */
+body { background: #f4f5f6; }
 
-/* ---------------------Fixed Navigation--------------------- */
+/* -----------Fixed Navbar with Hidden Nav Menu------------ */
 #first-navbar {
   top: -60px;
   background: #f72210;
@@ -15,18 +13,11 @@ body {
   background: url("../images/mainlogowhite.svg") no-repeat;
 }
 
-.subscribe-link {
-  color: #f72210;
-}
-
-.subscribe-link:hover {
-  color: #f72210;
-}
+.subscribe-link,
+.subscribe-link:hover { color: #f72210; }
 
 @media screen and (min-width: 0) {
-  .fixed-top .nav {
-    margin-right: 10px;
-  }
+  .fixed-top .nav { margin-right: 10px; }
 
   .sign-in,
   .subscribe-link {
@@ -34,20 +25,14 @@ body {
     padding: 0 3px;
   }
 
-  .subscribe-link .fa-chevron-right {
-    display: none;
-  }
+  .subscribe-link .fa-chevron-right { display: none; }
 
   .fa-bars,
-  .fa-times {
-    font-size: 27px;
-  }
+  .fa-times { font-size: 27px; }
 }
 
 @media screen and (min-width: 481px) {
-  .fixed-top .nav {
-    margin-right: 27px;
-  }
+  .fixed-top .nav { margin-right: 27px; }
 
   .sign-in,
   .subscribe-link {
@@ -73,17 +58,11 @@ body {
 }
 
 .fa-bars,
-.fa-times {
-  color: #fb9a94;
-}
+.fa-times { color: #fb9a94; }
 
-.menu-bar .fa-times {
-  display: none;
-}
+.menu-bar .fa-times { display: none; }
 
-#menu {
-  left: -9999px;
-}
+#menu { left: -9999px; }
 
 .nav-hidden {
   top: 56px;
@@ -108,17 +87,11 @@ body {
   color: #fff;
 }
 
-.nav-hidden .fas {
-  color: rgba(0, 0, 0, 0.549)
-}
+.nav-hidden .fas { color: rgba(0, 0, 0, 0.549); }
 
-.nav-hidden .form-inline {
-  padding: 13px;
-}
+.nav-hidden .form-inline { padding: 13px; }
 
-#search-one {
-  font-size: 16px;
-}
+#search-one { font-size: 16px; }
 
 .nav-hidden label {
   width: 20px;
@@ -126,35 +99,21 @@ body {
   background: url("../images/search.svg") no-repeat;
 }
 
-#search-one:focus {
-  outline: none;
-}
+#search-one:focus { outline: none; }
 
-#search-one:focus::placeholder {
-  color: #fff;
-}
+#search-one:focus::placeholder { color: #fff; }
 
-#menu:checked ~ .nav-hidden {
-  left: calc(100vw - 233px);
-}
+#menu:checked ~ .nav-hidden { left: calc(100vw - 233px); }
 
-#menu:checked + label i:first-child {
-  display: none;
-}
+#menu:checked + label i:first-child { display: none; }
 
-#menu:checked + label i:last-child {
-  display: inline-block;
-}
+#menu:checked + label i:last-child { display: inline-block; }
 
-/* ----------------Overall Page Wrapper----------------- */
-.overall-wrap {
-  max-width: 1310px;
-}
+/* -----------------Overall Page Wrapper------------------ */
+.overall-wrap { max-width: 1310px; }
 
-/* ------------------------Header----------------------*/
-.header-section {
-  background: #f72210;
-}
+/* --------------Header with Main Nav Menu---------------- */
+.header-section { background: #f72210; }
 
 .header-section > a {
   width: 395px;
@@ -179,18 +138,14 @@ body {
   border-top: 13px solid #f72210;
 }
 
-.main-nav {
-  z-index: 100;
-}
+.main-nav { z-index: 100; }
 
 .main-nav li {
   flex-basis: auto;
   border-left: 0.5px solid #d9d9d9;
 }
 
-.main-nav .nav-link:hover {
-  color: #f72210;
-}
+.main-nav .nav-link:hover { color: #f72210; }
 
 .main-nav .nav-link {
   padding: 0 0;
@@ -224,9 +179,7 @@ body {
   z-index: 101;
 }
 
-#search-two:focus::placeholder {
-  color: #fff;
-}
+#search-two:focus::placeholder { color: #fff; }
 
 @media screen and (min-width: 992px) {
   .main-wrap {
@@ -236,19 +189,16 @@ body {
 }
 
 /*
- * Highlights
+ * Highlights Section
  *
  * Includes subsections: Featured, Middle and Right.
  *
- * Middle section consists of Top Story, More Stories, and Culture & Travel sections
+ * Middle sub-sections: Top Story, More Stories, and Culture & Travel.
  *
- * Right section contains Latest News, and Opinion sections
+ * Right sub-sections: Latest News, and Opinion.
  */
-.highlights img {
-  object-fit: cover;
-}
+.highlights img { object-fit: cover; }
 
-/* --Middle, Featured and Right-- */
 .middle h5,
 .featured h4,
 .right h5 {
@@ -281,7 +231,6 @@ body {
   line-height: 1.3;
 }
 
-/* --Top Story, Featured and Right--*/
 .top-story .btn,
 .featured .btn,
 .right .btn {
@@ -292,17 +241,11 @@ body {
 }
 
 .top-story .btn a,
-.featured .btn a {
-  color: #f72210;
-}
+.featured .btn a { color: #f72210; }
 
-/* --More Stories and Right-- */
 .more-stories h6 a,
-.right h6 a {
-  font-size: 15px;
-}
+.right h6 a { font-size: 15px; }
 
-/* --More Stories and Latest-- */
 .more-stories img,
 .latest img {
   width: 100%;
@@ -334,21 +277,15 @@ body {
   }
 }
 
-/* --Opinion and Latest--*/
 .opinion h5 a,
 .latest h5 a {
   color: rgba(3, 3, 3, 0.4);
   text-decoration: none;
 }
 
-/* --Culture & Travel-- */
-.culture-travel {
-  background: #f4f5f7;
-}
+.culture-travel { background: #f4f5f7; }
 
-.culture-travel div {
-  background: #f4f5f7;
-}
+.culture-travel div { background: #f4f5f7; }
 
 .culture-travel div > a {
   font-size: 13px;
@@ -379,22 +316,14 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .culture-travel h5 {
-    width: 100%;
-  }
+  .culture-travel h5 { width: 100%; }
 
-  .culture-travel article {
-    width: 47.5%;
-  }
+  .culture-travel article { width: 47.5%; }
 }
 
-/* ---Featured and Right---*/
 .featured .btn .sponsored,
-.right .btn .sponsored {
-  color: #3581f4;
-}
+.right .btn .sponsored { color: #3581f4; }
 
-/* --Right-- */
 .right h6 a:hover {
   color: #f72210;
   text-decoration: none;
@@ -440,18 +369,15 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .right > article {
-    max-width: 330px;
-  }
+  .right > article { max-width: 330px; }
 }
 
-/* --Opinion-- */
 .opinion article > a {
   width: 63px;
   height: 63px;
 }
 
-/* --In The Magazine-- */
+/* --------------In The Magazine------------- */
 .magazine img {
   width: 100%;
   height: 100%;
@@ -464,17 +390,11 @@ body {
   background: rgba(255,255,255,.9);
 }
 
-#issue a {
-  color: #f72210;
-}
+#issue a { color: #f72210; }
 
-#see-all {
-  background: #f4f5f7;
-}
+#see-all { background: #f4f5f7; }
 
-#see-all:hover {
-  background: #dbdcdd;
-}
+#see-all:hover { background: #dbdcdd; }
 
 .mag-heading h5 {
   font-size: 16px;
@@ -506,9 +426,7 @@ body {
 }
 
 .mag-heading h6 a:hover,
-.mag-other h6 a:hover {
-  text-decoration-color: #f72210;
-}
+.mag-other h6 a:hover { text-decoration-color: #f72210; }
 
 .mag-other a.btn {
   bottom: 0;
@@ -527,37 +445,25 @@ body {
     border-bottom: .5px solid #d3d3d3;
   }
 
-  .mag-heading article {
-    width: 30%;
-  }
+  .mag-heading article { width: 30%; }
 
-  #issue {
-    font-size: 13px;
-  }
+  #issue { font-size: 13px; }
 
-  #see-all {
-    font-size: 14px;
-  }
+  #see-all { font-size: 14px; }
 
   .mag-heading h6 a,
-  .mag-other h6 a {
-    font-size: 18px;
-  }
+  .mag-other h6 a { font-size: 18px; }
 }
 
 @media screen and (min-width: 992px) {
-  .mag-img {
-    height: 162px;
-  }
+  .mag-img { height: 162px; }
 }
 
 @media screen and (min-width: 1200px) {
-  .mag-img {
-    height: 262px;
-  }
+  .mag-img { height: 262px; }
 }
 
-/* --Editor's Pick-- */
+/* ------------Editor's Pick------------ */
 .editor-pick img {
   width: 100%;
   height: 100%;
@@ -603,9 +509,7 @@ body {
   color: #000;
 }
 
-.editor-pick h6 a:hover {
-  text-decoration-color: #f72210;
-}
+.editor-pick h6 a:hover { text-decoration-color: #f72210; }
 
 .editor-pick p {
   font-size: 13px;
@@ -613,16 +517,12 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .editor-pick h6 a {
-    font-size: 19px;
-  }
+  .editor-pick h6 a { font-size: 19px; }
 
-  .editor-pick p {
-    font-size: 15px;
-  }
+  .editor-pick p { font-size: 15px; }
 }
 
-/* --Featured Slideshows--*/
+/* ---------Featured Slideshows---------- */
 .slideshow img {
   width: 100%;
   height: 100%;
@@ -680,17 +580,18 @@ body {
   color: #000;
 }
 
-.slideshow h6 a:hover {
-  text-decoration-color: #f72210;
-}
+.slideshow h6 a:hover { text-decoration-color: #f72210; }
 
 @media screen and (min-width: 768px) {
-  .slideshow h6 a {
-    font-size: 19px;
-  }
+  .slideshow h6 a { font-size: 19px; }
 }
 
-/* --Focus Sections-- */
+/*
+ * News Focus Section
+ *
+ * Includes subsections: U.S, World, Business, Tech & Science, Culture and Sports.
+ *
+ */
 .focus a > img {
   width: 100%;
   height: 100%;
@@ -715,17 +616,11 @@ body {
   color: #000;
 }
 
-.focus h6 a:hover {
-  text-decoration-color: #f72210;
-}
+.focus h6 a:hover { text-decoration-color: #f72210; }
 
-.focus-sub h6 a {
-  font-size: 15px;
-}
+.focus-sub h6 a { font-size: 15px; }
 
-.focus-sub h6 a:hover {
-  color: #f72210;
-}
+.focus-sub h6 a:hover { color: #f72210; }
 
 @media screen and (min-width: 0) {
   .focus-sub article > a {
@@ -748,19 +643,22 @@ body {
   }
 }
 
-/* --Footer-- */
-.footer {
-  background: #fff;
-}
+/*
+ * Footer
+ *
+ * Includes subsections: Membership and Footer-Links.
+ *
+ * Membership subsections: Subscribe and Newsletter.
+ *
+ */
+.footer { background: #fff; }
 
 .membership h4 {
   font-size: 15px;
   color: #f72210;
 }
 
-.subscribe article {
-  background: #f4f5f6;
-}
+.subscribe article { background: #f4f5f6; }
 
 .subscribe div:first-child {
   width: 260px;
@@ -777,9 +675,7 @@ body {
   color: #000;
 }
 
-.membership p {
-  font-size: 15px;
-}
+.membership p { font-size: 15px; }
 
 .membership .btn {
   font-size: 16px;
@@ -798,18 +694,14 @@ body {
   background: url("../images/mainlogored.svg") no-repeat;
 }
 
-.social > span {
-  font-size: 12px;
-}
+.social > span { font-size: 12px; }
 
 .social .fab {
   font-size: 25px;
   color: #666666;
 }
 
-.social .fab:hover {
-  color: #3b5998;
-}
+.social .fab:hover { color: #3b5998; }
 
 .editions:before {
   display: block;
@@ -819,27 +711,19 @@ body {
   border-top: .5px solid #d3d3d3;
 }
 
-.editions span {
-  font-size: 15px;
-}
+.editions span { font-size: 15px; }
 
 .footer-links a {
   font-size: 14px;
   color: #666;
 }
 
-.footer-links a:hover {
-  color: #333;
-}
+.footer-links a:hover { color: #333; }
 
-.terms {
-  min-height: 54px;
-}
+.terms { min-height: 54px; }
 
 @media screen and (min-width: 768px) {
-  .membership h5 {
-    font-size: 20px;
-  }
+  .membership h5 { font-size: 20px; }
 
   .newsletter img {
     width: 178px;
@@ -847,7 +731,5 @@ body {
   }
 
   .editions a,
-  .terms a {
-    border-right: .5px solid #d3d3d3;
-  }
+  .terms a { border-right: .5px solid #d3d3d3; }
 }
