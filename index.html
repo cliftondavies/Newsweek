@@ -18,16 +18,16 @@
 
       <a class="navbar-brand d-block" href="#"></a>
 
-      <ul class="nav mr-4 font-weight-bold">
-        <li class="nav-item"><a class="nav-link py-0 px-2 text-white" href="#">SIGN IN</a></li>
-        <li class="nav-item"><a class="nav-link py-0 px-2 bg-white subscribe-link" href="#">SUBSCRIBE <i class="fas fa-chevron-right ml-1"></i></a></li>
+      <ul class="nav font-weight-bold">
+        <li class="nav-item"><a class="nav-link py-0 text-white sign-in" href="#">SIGN IN</a></li>
+        <li class="nav-item"><a class="nav-link py-0 bg-white subscribe-link" href="#">SUBSCRIBE <i class="fas fa-chevron-right ml-1"></i></a></li>
       </ul>
 
       <input class="position-absolute" type="checkbox" id="menu">
 
       <label for="menu" class="position-absolute border-0 menu-bar">
-        <i class="fas fa-bars fa-2x"></i>
-        <i class="fas fa-times fa-2x"></i>
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-times"></i>
       </label>
 
       <div id="nav-hide" class="position-absolute bg-white nav-hidden">
@@ -1070,14 +1070,14 @@
         <h2 class="sr-only">Footer</h2>
 
         <!--Membership-->
-        <section class="row px-lg-3 mb-5 membership">
+        <section class="row px-lg-3 pb-5 membership">
           <h3 class="sr-only">Membership</h3>
 
           <!--Subscribe-->
-          <section class="col-lg-7 col-xl-8 mb-4 subscribe">
+          <section class="col-lg-7 col-xl-8 mb-4 mb-lg-0 d-lg-flex flex-lg-column subscribe">
             <h4 class="font-weight-bold">SUBSCRIBE</h4>
 
-            <article class="d-md-flex align-items-md-center px-3 pt-4 pb-3 px-md-4 py-md-4 text-center text-md-left">
+            <article class="d-md-flex align-items-md-center flex-grow-1 px-3 pt-4 pb-3 px-md-4 py-md-4 text-center text-md-left">
               <div class="position-relative flex-grow-0 flex-shrink-0 mb-3 mx-auto text-left">
                 <img class="position-absolute" alt="magazine issue one" src="https://d.newsweek.com/en/full/1563281/february-7-2020-cover.jpg?w=170&amp;q=95&amp;f=65b7533b0137978d446aa40a1c50692a">
                 <img class="position-absolute" alt="magazine issue two" src="https://d.newsweek.com/en/full/1564924/february-14-2020-cover.jpg?w=170&amp;q=95&amp;f=c1d5601167747525a4d15e56749350ec">
@@ -1094,10 +1094,10 @@
           </section>
 
           <!--Newsletter-->
-          <section class="col-lg-5 col-xl-4 pb-lg-5 newsletter">
+          <section class="col-lg-5 col-xl-4 d-lg-flex flex-lg-column newsletter">
             <h4 class="font-weight-bold">NEWSLETTER</h4>
 
-            <article class="border h-100 d-md-flex text-md-left text-center">
+            <article class="border d-md-flex text-md-left text-center flex-grow-1">
               <img class="d-block flex-grow-0 flex-shrink-0" src="https://d.newsweek.com/en/full/1541302/starting5-homepage.png?w=397&h=265&q=90&f=742bce9a6f72dd8f19ba2e7fd5db06e5" alt="newsweek newsletter">
 
               <div class="px-3 px-md-4 py-3 py-md-4">
@@ -1112,36 +1112,36 @@
         </section>
 
         <!--Footer Links-->
-        <section class="">
+        <section class="row px-3">
           <h3 class="sr-only">Footer Links</h3>
 
-          <div class="col">
-            <a href="#"></a> <!--Add Logo Background Image-->
+          <div class="col-12 mb-2 border-top pt-4 social">
+            <a class="d-block mb-2" href="#"></a> <!--Add Logo Background Image-->
 
-            <span>&copy; 2020 NEWSWEEK</span>
+            <span class="d-inline-block mb-2">&copy; 2020 NEWSWEEK</span>
 
-            <ul>
-              <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-              <li><a href="#"><i class="fab fa-tumblr"></i></a></li>
-              <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            <ul class="nav">
+              <li class="nav-item mr-3"><a class="nav-link px-0 py-0" href="#"><i class="fab fa-facebook-square"></i></a></li>
+              <li class="nav-item mr-3"><a class="nav-link px-0 py-0" href="#"><i class="fab fa-twitter"></i></a></li>
+              <li class="nav-item mr-3"><a class="nav-link px-0 py-0" href="#"><i class="fab fa-instagram"></i></a></li>
+              <li class="nav-item mr-3"><a class="nav-link px-0 py-0" href="#"><i class="fab fa-tumblr"></i></a></li>
+              <li class="nav-item"><a class="nav-link px-0 py-0" href="#"><i class="fab fa-linkedin-in"></i></a></li>
             </ul>
           </div>
 
-          <div class="col">
-            <span>Editions:</span>
+          <div class="col-12 d-flex align-items-center editions pb-1 border-top">
+            <span class="mr-3 font-weight-bold">Editions:</span>
 
-            <ul>
-              <li><a href="#">U.S. Edition</a></li>
-              <li><a href="#">日本</a></li>
-              <li><a href="#">Pakistan</a></li>
-              <li><a href="#">Polska</a></li>
-              <li><a href="#">Roma&#770;nia</a></li>
+            <ul class="nav">
+              <li class="nav-item"><a class="nav-list pr-3 text-decoration-none" href="#">U.S. Edition</a></li>
+              <li class="nav-item"><a class="nav-list pr-3 text-decoration-none" href="#">日本</a></li>
+              <li class="nav-item"><a class="nav-list pr-3 text-decoration-none" href="#">Pakistan</a></li>
+              <li class="nav-item"><a class="nav-list pr-3 text-decoration-none" href="#">Polska</a></li>
+              <li class="nav-item"><a class="nav-list text-decoration-none" href="#">Roma&#770;nia</a></li>
             </ul>
           </div>
 
-          <ul class="col">
+          <ul class="col-12 terms">
             <li><a href="#">About Us</a></li>
             <li><a href="#">Corrections</a></li>
             <li><a href="#">Contact Us</a></li>

@@ -3,7 +3,7 @@ body {
   background: #f4f5f6;
 }
 
-/* ---------------------Navigation--------------------- */
+/* ---------------------Fixed Navigation--------------------- */
 #first-navbar {
   top: -60px;
   background: #f72210;
@@ -14,7 +14,7 @@ body {
   /* display: block; */
   width: 131px;
   height: 20px;
-  background: url("../images/mainlogo.svg") no-repeat;
+  background: url("../images/mainlogowhite.svg") no-repeat;
 }
 
 .subscribe-link {
@@ -23,6 +23,48 @@ body {
 
 .subscribe-link:hover {
   color: #f72210;
+}
+
+@media screen and (min-width: 0) {
+  .fixed-top .nav {
+    margin-right: 10px;
+  }
+
+  .sign-in,
+  .subscribe-link {
+    font-size: 13px;
+    padding: 0 3px;
+  }
+
+  .subscribe-link .fa-chevron-right {
+    display: none;
+  }
+
+  .fa-bars,
+  .fa-times {
+    font-size: 27px;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .fixed-top .nav {
+    margin-right: 27px;
+  }
+
+  .sign-in,
+  .subscribe-link {
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+
+  .subscribe-link .fa-chevron-right {
+    display: inline;
+  }
+
+  .fa-bars,
+  .fa-times {
+    font-size: 32px;
+  }
 }
 
 .menu-bar {
@@ -126,7 +168,7 @@ body {
 .header-section > a {
   width: 395px;
   height: 60px;
-  background: url("../images/mainlogo.svg") no-repeat;
+  background: url("../images/mainlogowhite.svg") no-repeat;
 }
 
 .second-navbar {
@@ -786,3 +828,39 @@ body {
     height: auto;
   }
 }
+
+.social > a {
+  width: 236px;
+  height: 35px;
+  background: url("../images/mainlogored.svg") no-repeat;
+}
+
+.social > span {
+  font-size: 12px;
+}
+
+.social .fab {
+  font-size: 25px;
+  color: #666666;
+}
+
+.social .fab:hover {
+  color: #3b5998;
+}
+
+.editions span {
+  font-size: 15px;
+}
+
+.editions a {
+  font-size: 14px;
+  color: #666;
+}
+
+/* .social:before {
+  display: block;
+  content: "";
+  width: 100%;
+  margin-bottom: 20px;
+  border-top: .5px solid #d3d3d3;
+} */
