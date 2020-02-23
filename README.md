@@ -40,7 +40,7 @@ All grid columns, within the five main sections, stack on extra-small and small 
 
 ##### Highlights
 
-Three columns are created to position the three sub-sections within Highlights. At medium size, the section adopts a two-row layout - with two columns on the top row for first two sub-sections, and one column on the second row for the third sub-section. From large screens upward, the columns become parallel to each other.
+Three columns are created to position the three main sections within Highlights. On **XS** and **S** screens, the columns stack to create the following visual order of sub-sections - TOP STORY, MORE STORIES, CULTURE & TRAVEL, FEATURED STORIES, OPINION and LATEST NEWS - from top to bottom. At medium size, the section adopts a two-row layout. There are two columns on the top row. The first column houses the FEATURED STORIES section, while the second column displays sections in the order: TOP STORY, CULTURE & TRAVEL and MORE STORIES. The second row has one column, with sections in the order: OPINION and LATEST NEWS. The three columns are laid out parallel to each other, for large and extra-large screens: FEATURED STORIES section first, then MIDDLE (order: TOP STORY, CULTURE & TRAVEL and MORE STORIES), and RIGHT (order: OPINION and LATEST NEWS).
 
 ##### In The Magazine
 
