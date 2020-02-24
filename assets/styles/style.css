@@ -1,0 +1,738 @@
+/* ------------Body------------ */
+body { background: #f4f5f6; }
+
+/* -----------Fixed Navbar with Hidden Nav Menu------------ */
+#first-navbar {
+  top: -60px;
+  background: #f72210;
+}
+
+#first-navbar > a {
+  width: 131px;
+  height: 20px;
+  background: url("../images/mainlogowhite.svg") no-repeat;
+}
+
+.subscribe-link,
+.subscribe-link:hover { color: #f72210; }
+
+@media screen and (min-width: 0) {
+  .fixed-top .nav { margin-right: 10px; }
+
+  .sign-in,
+  .subscribe-link {
+    font-size: 13px;
+    padding: 0 3px;
+  }
+
+  .subscribe-link .fa-chevron-right { display: none; }
+
+  .fa-bars,
+  .fa-times { font-size: 27px; }
+}
+
+@media screen and (min-width: 481px) {
+  .fixed-top .nav { margin-right: 27px; }
+
+  .sign-in,
+  .subscribe-link {
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+
+  .subscribe-link .fa-chevron-right {
+    display: inline;
+  }
+
+  .fa-bars,
+  .fa-times {
+    font-size: 32px;
+  }
+}
+
+.menu-bar {
+  top: 12px;
+  right: 20px;
+  cursor: pointer;
+  background: none;
+}
+
+.fa-bars,
+.fa-times { color: #fb9a94; }
+
+.menu-bar .fa-times { display: none; }
+
+#menu { left: -9999px; }
+
+.nav-hidden {
+  top: 56px;
+  right: 13px;
+  left: 100%;
+  width: 220px;
+  height: calc(100vh - 56px);
+  box-shadow: rgba(0, 0, 0, 0.102) -2px 0 2px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  transition: all 0.3s ease;
+}
+
+.nav-hidden .nav-link {
+  padding: 3px 0 3px 15px;
+  font-size: 18px;
+  color: #000;
+}
+
+.nav-hidden .nav-link:hover {
+  background: #000;
+  color: #fff;
+}
+
+.nav-hidden .fas { color: rgba(0, 0, 0, 0.549); }
+
+.nav-hidden .form-inline { padding: 13px; }
+
+#search-one { font-size: 16px; }
+
+.nav-hidden label {
+  width: 20px;
+  height: 20px;
+  background: url("../images/search.svg") no-repeat;
+}
+
+#search-one:focus { outline: none; }
+
+#search-one:focus::placeholder { color: #fff; }
+
+#menu:checked ~ .nav-hidden { left: calc(100vw - 233px); }
+
+#menu:checked + label i:first-child { display: none; }
+
+#menu:checked + label i:last-child { display: inline-block; }
+
+/* -----------------Overall Page Wrapper------------------ */
+.overall-wrap { max-width: 1310px; }
+
+/* --------------Header with Main Nav Menu---------------- */
+.header-section { background: #f72210; }
+
+.header-section > time,
+.header-section > a,
+.header-section > ul { width: 33.33%; }
+
+.header-section > a {
+  height: 60px;
+  background: url("../images/mainlogowhite.svg") 50% no-repeat;
+}
+
+.second-navbar {
+  padding-right: 160px !important;
+  border-bottom: 2.5px solid #f4f5f6;
+}
+
+.second-navbar::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "";
+  display: block;
+  width: 75px;
+  background-color: #f72210;
+  border-left: 12px solid white;
+  border-top: 13px solid #f72210;
+}
+
+.main-nav { z-index: 100; }
+
+.main-nav li {
+  flex-basis: auto;
+  border-left: 0.5px solid #d9d9d9;
+}
+
+.main-nav .nav-link:hover { color: #f72210; }
+
+.main-nav .nav-link {
+  padding: 0 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+}
+
+.nav-form {
+  left: 0;
+  right: 6%;
+}
+
+#search-two {
+  height: 27px;
+  font-size: 16px;
+  z-index: 100;
+  transition: all 0.2s ease;
+}
+
+.nav-form .search-field {
+  width: 20px;
+  height: 20px;
+  background: url("../images/search.svg") no-repeat;
+}
+
+#search-two:focus {
+  flex: 1;
+  padding: 12px;
+  outline: none;
+  z-index: 101;
+}
+
+#search-two:focus::placeholder { color: #fff; }
+
+@media screen and (min-width: 992px) {
+  .main-wrap {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+}
+
+/*
+ * Highlights Section
+ *
+ * Includes subsections: Featured, Middle and Right.
+ *
+ * Middle sub-sections: Top Story, More Stories, and Culture & Travel.
+ *
+ * Right sub-sections: Latest News, and Opinion.
+ */
+.highlights img { object-fit: cover; }
+
+.middle h5,
+.featured h4,
+.right h5 {
+  font-size: 15px;
+  font-weight: 700;
+  color: rgba(3, 3, 3, 0.4);
+}
+
+.middle h6 a,
+.featured h5 a,
+.right h6 a,
+.ads {
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #000;
+}
+
+.middle h6 a:hover,
+.featured h5 a:hover,
+.ads:hover {
+  color: black;
+  text-decoration-color: #f72210;
+}
+
+.middle p,
+.featured p,
+.right p {
+  font-size: 13px;
+  line-height: 1.3;
+}
+
+.top-story .btn,
+.featured .btn,
+.right .btn {
+  bottom: 0;
+  font-size: 15px;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.top-story .btn a,
+.featured .btn a { color: #f72210; }
+
+.more-stories h6 a,
+.right h6 a { font-size: 15px; }
+
+.more-stories img,
+.latest img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 0) {
+  .more-stories article > a,
+  .latest article > a {
+    width: 135px;
+    height: 90px;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .more-stories article > a,
+  .latest article > a {
+    width: 258px;
+    height: 172px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .more-stories article > a,
+  .latest article > a {
+    width: 135px;
+    height: 90px;
+  }
+}
+
+.opinion h5 a,
+.latest h5 a {
+  color: rgba(3, 3, 3, 0.4);
+  text-decoration: none;
+}
+
+.culture-travel { background: #f4f5f7; }
+
+.culture-travel div { background: #f4f5f7; }
+
+.culture-travel div > a {
+  font-size: 13px;
+  background: #c2d4d7;
+  color: #272727;
+}
+
+.culture-travel div > a:hover {
+  background: #272727;
+  color: #c2d4d7;
+}
+
+.culture-travel h5 a {
+  color: #333;
+  text-decoration: none;
+}
+
+.culture-travel h6 a {
+  font-size: 20px;
+  font-weight: 400;
+  color: #272727;
+  text-decoration: none;
+}
+
+.culture-travel p {
+  font-size: 15px;
+  color: rgba(39, 39, 39, 0.5);
+}
+
+@media screen and (min-width: 768px) {
+  .culture-travel h5 { width: 100%; }
+
+  .culture-travel article { width: 47.5%; }
+}
+
+.featured .btn .sponsored,
+.right .btn .sponsored { color: #3581f4; }
+
+.right h6 a:hover {
+  color: #f72210;
+  text-decoration: none;
+}
+
+.right span {
+  font-size: 14px;
+  font-weight: 700;
+  color: #555;
+}
+
+.sign-up {
+  max-width: 300px;
+  border-color: #e5e5e5;
+  background: #f4f5f6;
+}
+
+.right .sign-up h5 {
+  font-size: 16px;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.sign-up div span {
+  width: 29px;
+  height: 28px;
+  background: url("../images/sublogo.svg"), #f72210;
+}
+
+.sign-up .btn {
+  width: 100px;
+  height: 38px;
+  background: #666;
+}
+
+.sign-up .btn:hover {
+  background: #999;
+}
+
+.sign-up .card-link {
+  font-size: 14px;
+  color: #333;
+}
+
+@media screen and (min-width: 768px) {
+  .right > article { max-width: 330px; }
+}
+
+.opinion article > a {
+  width: 63px;
+  height: 63px;
+}
+
+/* --------------In The Magazine------------- */
+.magazine img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#issue {
+  bottom: 0;
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+#issue a { color: #f72210; }
+
+#see-all { background: #f4f5f7; }
+
+#see-all:hover { background: #dbdcdd; }
+
+.mag-heading h5 {
+  font-size: 16px;
+  color: #333;
+}
+
+.mag-heading > div span {
+  width: 29px;
+  height: 28px;
+  background: url("../images/sublogo.svg"), #f72210;
+}
+
+.mag-heading article span,
+.mag-other span {
+  font-size: 14px;
+  background: #f72210;
+}
+
+.mag-heading div > a,
+.mag-other div a {
+  font-size: 14px;
+  color: #f72210;
+}
+
+.mag-heading h6 a,
+.mag-other h6 a {
+  font-size: 14px;
+  color: #000;
+}
+
+.mag-heading h6 a:hover,
+.mag-other h6 a:hover { text-decoration-color: #f72210; }
+
+.mag-other a.btn {
+  bottom: 0;
+  font-size: 15px;
+  background: #f72210;
+}
+
+@media screen and (min-width: 768px) {
+  .mag-img {
+    width: 100%;
+    height: 162px;
+  }
+
+  .mag-heading > div {
+    width: 100%;
+    border-bottom: 0.5px solid #d3d3d3;
+  }
+
+  .mag-heading article { width: 30%; }
+
+  #issue { font-size: 13px; }
+
+  #see-all { font-size: 14px; }
+
+  .mag-heading h6 a,
+  .mag-other h6 a { font-size: 18px; }
+}
+
+@media screen and (min-width: 992px) {
+  .mag-img { height: 162px; }
+}
+
+@media screen and (min-width: 1200px) {
+  .mag-img { height: 262px; }
+}
+
+/* ------------Editor's Pick------------ */
+.editor-pick img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.editor-pick > div {
+  width: 100%;
+  height: 37px;
+}
+
+.editor-pick > div::after {
+  display: block;
+  content: "";
+  width: 100%;
+  border-top: 0.5px solid #d3d3d3;
+}
+
+.editor-pick h5 {
+  font-size: 16px;
+  color: #333;
+}
+
+.editor-pick > div span {
+  width: 29px;
+  height: 28px;
+  background: url("../images/sublogo.svg"), #f72210;
+}
+
+.editor-pick .btn {
+  bottom: 0;
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.editor-pick span a {
+  font-size: 15px;
+  color: #f72210;
+}
+
+.editor-pick h6 a {
+  font-size: 17px;
+  color: #000;
+}
+
+.editor-pick h6 a:hover { text-decoration-color: #f72210; }
+
+.editor-pick p {
+  font-size: 13px;
+  line-height: 1.3;
+}
+
+@media screen and (min-width: 768px) {
+  .editor-pick h6 a { font-size: 19px; }
+
+  .editor-pick p { font-size: 15px; }
+}
+
+/* ---------Featured Slideshows---------- */
+.slideshow img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slideshow > div {
+  width: 100%;
+  height: 37px;
+}
+
+.slideshow > div::after {
+  display: block;
+  content: "";
+  width: 100%;
+  border-top: 0.5px solid #d3d3d3;
+}
+
+.slideshow h5 {
+  font-size: 16px;
+  color: #333;
+}
+
+.slideshow > div > div {
+  width: 29px;
+  height: 28px;
+  background: url("../images/sublogo.svg"), #f72210;
+}
+
+.slideshow div > span {
+  left: -3.5px;
+  top: -3.5px;
+  width: 29px;
+  height: 28px;
+  border-right: 0.5px solid #fff;
+  border-bottom: 0.5px solid #fff;
+  background: url("../images/sublogo.svg"), #f72210;
+}
+
+.slideshow .btn {
+  bottom: 0;
+  width: 70px;
+  height: 52px;
+  font-size: 20px;
+  line-height: 45px;
+  text-indent: 5px;
+  text-align: center;
+  background: url(https://g.newsweek.com/themes/newsweek/images/icon-slideshows-nw.png) no-repeat, rgba(255, 255, 255, 0.9);
+  background-size: contain;
+  color: #e9212e;
+}
+
+.slideshow h6 a {
+  font-size: 16px;
+  color: #000;
+}
+
+.slideshow h6 a:hover { text-decoration-color: #f72210; }
+
+@media screen and (min-width: 768px) {
+  .slideshow h6 a { font-size: 19px; }
+}
+
+/*
+ * News Focus Section
+ *
+ * Includes subsections: U.S, World, Business, Tech & Science, Culture and Sports.
+ *
+ */
+.news-focus a > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.news-focus h5::before {
+  display: block;
+  content: "";
+  width: 100%;
+  margin-bottom: 20px;
+  border-top: 0.5px solid #d3d3d3;
+}
+
+.news-focus h5 {
+  font-size: 19px;
+  color: #f72210;
+}
+
+.news-focus h6 a {
+  font-size: 16px;
+  color: #000;
+}
+
+.news-focus h6 a:hover { text-decoration-color: #f72210; }
+
+.focus-sub h6 a { font-size: 15px; }
+
+.focus-sub h6 a:hover { color: #f72210; }
+
+@media screen and (min-width: 0) {
+  .focus-sub article > a {
+    width: 135px;
+    height: 90px;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .focus-sub article > a {
+    width: 258px;
+    height: 172px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .focus-sub article > a {
+    width: 135px;
+    height: 90px;
+  }
+}
+
+/*
+ * Footer
+ *
+ * Includes subsections: Membership and Footer-Links.
+ *
+ * Membership subsections: Subscribe and Newsletter.
+ *
+ */
+.page-footer { background: #fff; }
+
+.membership h4 {
+  font-size: 15px;
+  color: #f72210;
+}
+
+.subscribe article { background: #f4f5f6; }
+
+.subscribe div:first-child {
+  width: 260px;
+  height: 241px;
+}
+
+.subscribe img:last-child {
+  right: 10px;
+  bottom: 0;
+}
+
+.membership h5 {
+  font-size: 18px;
+  color: #000;
+}
+
+.membership p { font-size: 15px; }
+
+.membership .btn {
+  font-size: 16px;
+  background: #f72210;
+}
+
+.newsletter img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.social > a {
+  width: 236px;
+  height: 35px;
+  background: url("../images/mainlogored.svg") no-repeat;
+}
+
+.social > span { font-size: 12px; }
+
+.social .fab {
+  font-size: 25px;
+  color: #666;
+}
+
+.social .fab:hover { color: #3b5998; }
+
+.editions::before {
+  display: block;
+  content: "";
+  width: 100%;
+  margin-bottom: 8px;
+  border-top: 0.5px solid #d3d3d3;
+}
+
+.editions span { font-size: 15px; }
+
+.footer-links a {
+  font-size: 14px;
+  color: #666;
+}
+
+.footer-links a:hover { color: #333; }
+
+.terms { min-height: 54px; }
+
+@media screen and (min-width: 768px) {
+  .membership h5 { font-size: 20px; }
+
+  .newsletter img {
+    width: 178px;
+    height: auto;
+  }
+
+  .editions a,
+  .terms a { border-right: 0.5px solid #d3d3d3; }
+}
