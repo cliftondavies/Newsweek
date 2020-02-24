@@ -85,7 +85,7 @@ Footer Links is the final Footer section. It consists of three columns that are 
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/cliftondavies/Newsweek/feature/homepage/index.html)
+[Live Demo Link](https://cliftondavies.github.io/Newsweek/)
 
 ## Authors
 
