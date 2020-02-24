@@ -115,10 +115,13 @@ body { background: #f4f5f6; }
 /* --------------Header with Main Nav Menu---------------- */
 .header-section { background: #f72210; }
 
+.header-section > time,
+.header-section > a,
+.header-section > ul { width: 33.33%; }
+
 .header-section > a {
-  width: 395px;
   height: 60px;
-  background: url("../images/mainlogowhite.svg") no-repeat;
+  background: url("../images/mainlogowhite.svg") 50% no-repeat;
 }
 
 .second-navbar {
