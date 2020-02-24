@@ -592,13 +592,13 @@ body { background: #f4f5f6; }
  * Includes subsections: U.S, World, Business, Tech & Science, Culture and Sports.
  *
  */
-.focus a > img {
+.news-focus a > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.focus h5::before {
+.news-focus h5::before {
   display: block;
   content: "";
   width: 100%;
@@ -606,17 +606,17 @@ body { background: #f4f5f6; }
   border-top: 0.5px solid #d3d3d3;
 }
 
-.focus h5 {
+.news-focus h5 {
   font-size: 19px;
   color: #f72210;
 }
 
-.focus h6 a {
+.news-focus h6 a {
   font-size: 16px;
   color: #000;
 }
 
-.focus h6 a:hover { text-decoration-color: #f72210; }
+.news-focus h6 a:hover { text-decoration-color: #f72210; }
 
 .focus-sub h6 a { font-size: 15px; }
 
@@ -651,7 +651,7 @@ body { background: #f4f5f6; }
  * Membership subsections: Subscribe and Newsletter.
  *
  */
-.footer { background: #fff; }
+.page-footer { background: #fff; }
 
 .membership h4 {
   font-size: 15px;
