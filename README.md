@@ -2,7 +2,7 @@
 
 > To recreate the homepage of popular news site, [Newsweek](https://www.newsweek.com/), using the Bootstrap framework.
 
-![screenshot](assets/images/screenshot.png)
+![screenshot](newsweek.png)
 
 ## Implementation Details
 
