@@ -1,6 +1,6 @@
 # Newsweek
 
-> A clone of the homepage of popular news site, [Newsweek](https://www.newsweek.com/), using Bootstrap.
+> Welcome to the Newsweek portal!
 
 ![screenshot](newsweek.png)
 
