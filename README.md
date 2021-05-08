@@ -1,6 +1,6 @@
 # Newsweek
 
-> To recreate the homepage of popular news site, [Newsweek](https://www.newsweek.com/), using the Bootstrap framework.
+> A clone of the homepage of popular news site, [Newsweek](https://www.newsweek.com/), using Bootstrap.
 
 ![screenshot](newsweek.png)
 
@@ -10,10 +10,11 @@
 
 ## Tools & Technologies Used
 
-- HTML, CSS. JavaScript.
-- Bootstrap.
-- Github, Git, Visual Studio Code.
-- Pesticide, Font Awesome.
+- HTML5
+- CSS3
+- Bootstrap v4.4
+- JavaScript ES6 >
+- Font Awesome 5
 
 ## Live Demo
 
@@ -39,7 +40,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- The Corgis!
+- [Techsini multi-mockup generator](https://techsini.com/multi-mockup/index.php)
+- [Pesticide](https://github.com/mrmrs/pesticide)
 
 ## 📝 License
 
