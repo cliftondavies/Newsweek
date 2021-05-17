@@ -14,7 +14,6 @@
 - CSS3
 - Bootstrap v4.4
 - JavaScript ES6 >
-- Font Awesome 5
 
 ## Live Demo
 
@@ -40,8 +39,9 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- [Techsini multi-mockup generator](https://techsini.com/multi-mockup/index.php)
 - [Pesticide](https://github.com/mrmrs/pesticide)
+- [Favicon Generator](https://favicon.io/)
+- [Techsini multi-mockup generator](https://techsini.com/multi-mockup/index.php)
 
 ## 📝 License
 
